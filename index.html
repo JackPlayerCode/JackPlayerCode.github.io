@@ -246,7 +246,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/08/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%93%8D%E4%BD%9C/">数据库的操作</a>
+      <a class="article-title" href="/2020/03/08/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%93%8D%E4%BD%9C/">数据库操作</a>
     </h1>
   
 
@@ -259,44 +259,44 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#####<strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong>DDL数据库的怎删改查<strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong><br>#数据库的创建<br>        CREATE DATABASE 数据库名;<br>        CREATE DATABASE IF NOT EXISTS 数据库名;<br>        CREATE DATABASE 数据库名 CHARACTER SET 字符集类型;</p>
+        <p>//<strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong>DDL数据库的怎删改查<strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong><br>#数据库的创建<br>        CREATE DATABASE 数据库名;<br>        CREATE DATABASE IF NOT EXISTS 数据库名;<br>        CREATE DATABASE 数据库名 CHARACTER SET 字符集类型;</p>
 <p>#数据库的查询<br>        SHOW DATABASES;<br>        SHOW CREATE DATABASE 数据库名;</p>
 <p>#数据库的修改<br>        ALTER DATABASE 数据库名 CHARACTER SET 字符集类型</p>
 <p>#数据库的删除<br>        DROP DATABASE 数据库名;<br>        DROP DATABASE IF EXISTS 数据库名;</p>
 <p>#操作数据库<br>        USE 数据库名；<br>        SELECT DATABASE();</p>
-<p>#<strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong>DDL表的增删改查<strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong><br>#查询数据库中所有的表<br>        SHOW TABLES;</p>
+<p>//<strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong>DDL表的增删改查<strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong><br>#查询数据库中所有的表<br>        SHOW TABLES;</p>
 <p>#查询表的字符集<br>        SHOW CREATE TABLE 表名;</p>
 <p>#查询表中的结构<br>        DESC newstu;</p>
 <p>#创建一个表<br>        CREATE TABLE NEWSTU(<br>        列名1 类型1，<br>        列名2 类型2，<br>        列名n 类型n);</p>
 <p>#删除一个表<br>        DROP TABLE 表名;<br>        DROP TABLE IF EXISTS n表名;</p>
 <p>#修改一张表<br>        ALTER TABLE oldtable RENAME TO newtable;<br>        ALTER TABLE 表名 CHARACTER SET 字符集;<br>        ALTER TABLE 表名 ADD 列名 类型;<br>        ALTER TABLE 表名 DROP 列名 类型;<br>        ALTER TABLE 表名 CHANGE 列名 新列名 类型;<br>        ALTER TABLE 表名 MODIFY 列名 新类型; </p>
-<p>#<strong><strong><strong><strong>****</strong></strong></strong></strong>DDL数据的增删改操作<strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong><br>#在表中插入数据<br>        INSERT INTO 表名(newid,NAME,age,score,brithday) VALUES(1,”jell”,19,100.0,”2000-09-08”);</p>
+<p>//<strong><strong><strong><strong>****</strong></strong></strong></strong>DDL数据的增删改操作<strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong><br>#在表中插入数据<br>        INSERT INTO 表名(newid,NAME,age,score,brithday) VALUES(1,”jell”,19,100.0,”2000-09-08”);</p>
 <p>#全员插入不需要写列名<br>        INSERT INTO 表名 VALUES(1,”d”,19,88.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(2,”a”,72,3.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(3,”w”,15,2.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(4,”h”,17,51.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(5,”x”,13,84.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(6,”t”,69,76.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(7,”e”,18,98.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(8,”i”,39,100.0,”2000-09-08”);</p>
 <p>#删除某个指定的数据<br>        DELETE FROM 表名 WHERE 键=值;</p>
 <p>#删除表中所有数据<br>        DELETE FROM 表名;</p>
 <p>#查询表中的列<br>        DESC 表名;</p>
 <p>#初始化某一张表<br>        TRUNCATE TABLE 表名;</p>
 <p>#修改表中的数据<br>        UPDATE 表名 SET newid=NULL,age=00 WHERE newid=1;</p>
-<p>#<strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong>排序查询<strong><strong><strong><strong><strong><strong><strong>****</strong></strong></strong></strong></strong></strong></strong><br>#表中数据降序排序desc （并查询）<br>        SELECT*FROM 表名 ORDER BY 键 DESC;<br>    ORDER BY 键 DESC;</p>
+<p>//<strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong>排序查询<strong><strong><strong><strong><strong><strong><strong>****</strong></strong></strong></strong></strong></strong></strong><br>#表中数据降序排序desc （并查询）<br>        SELECT*FROM 表名 ORDER BY 键 DESC;<br>    ORDER BY 键 DESC;</p>
 <p>#表中数据升序排序asc      （并查询 ）<br>        SELECT<em>FROM 表名 ORDER BY 键 ASC;<br>    ORDER BY 键 ASC;<br>        SELECT</em>FROM 表名 ORDER BY 键;<br>    ORDER BY 键;</p>
-<p>#<strong><strong><strong><strong>*****</strong></strong></strong></strong>聚合函数<strong><strong><strong><strong><strong><strong>****</strong></strong></strong></strong></strong></strong><br>#count的使用<br>        SELECT COUNT(键) FROM newstu; </p>
+<p>//<strong><strong><strong><strong>*****</strong></strong></strong></strong>聚合函数<strong><strong><strong><strong><strong><strong>****</strong></strong></strong></strong></strong></strong><br>#count的使用<br>        SELECT COUNT(键) FROM newstu; </p>
 <p>#包括null的count使用<br>        SELECT COUNT(IFNULL(键,0)) FROM 表名;<br>        SELECT COUNT(*) FROM 表名;</p>
 <p>#max的使用<br>        SELECT MAX(键) FROM 表名 ;</p>
 <p>#min的使用<br>        SELECT MIN(键) FROM 表名;</p>
 <p>#sum的使用<br>        SELECT SUM(键) FROM 表名;</p>
 <p>#avg的使用<br>        SELECT AVG(键) FROM 表名;</p>
-<p>#<strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong>分组查询的使用<strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong><br>        SELECT 所查询的内容 FROM newstu GROUP BY 分组的依据（列名）;</p>
+<p>//<strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong>分组查询的使用<strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong><br>        SELECT 所查询的内容 FROM newstu GROUP BY 分组的依据（列名）;</p>
 <pre><code>SELECT COUNT(newid),AVG(score) FROM newstu GROUP BY NAME;
 SELECT COUNT(IFNULL(newid,0)),AVG(score) FROM newstu GROUP BY NAME;</code></pre><p>#分组之前对其进行条件限制 where 在分组之前 不能进行聚合函数的判断<br>        SELECT COUNT(newid),AVG(score) FROM newstu WHERE newid &gt; 3  GROUP BY NAME;</p>
 <p>#分组之后对其进行条件限制  having 在分组之后 可以进行聚合函数的判断<br>        SELECT COUNT(newid),AVG(score) FROM newstu GROUP BY NAME HAVING COUNT(newid) &gt;0;</p>
-<p>#<strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong>分页查询的使用<strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong><br>        SELECT <em>FROM newstu LIMIT 开始的索引,每页的条数;<br>        SELECT *FROM newstu LIMIT 0,2;<br>        SELECT *FROM newstu LIMIT 2,2;<br>        SELECT *FROM newstu LIMIT 4,2;<br>        SELECT *FROM newstu LIMIT 6,2;<br>#公式  开始的索引 = （当前的页码-1）</em>每页的条数<br>#分页操作是一个方言 和 其他的数据库的实现是不一样的</p>
-<p>#<strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong>基础查询操作<strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong><br>#格式<br>        SELECT<br>            字段1，<br>            字段2<br>        FROM<br>            表名<br>        [WHERE<br>            条件1] ，<br>        [WHERE<br>            条件2]<br>        [GROUP BY<br>            条件3]<br>        [ORDER BY<br>            排序方式<br>       HAVING<br>        LIMIT<br>            开始的索引，每页查询的条数]</p>
-<p>#去除重复的结果集  distinct 结果完全一样才可以去除<br>        SELECT DISTINCT 字段1 FROM 表名;<br>        SELECT DISTINCT NAME FROM newstu;</p>
+<p>//<strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong>分页查询的使用<strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong><br>        SELECT <em>FROM newstu LIMIT 开始的索引,每页的条数;<br>        SELECT *FROM newstu LIMIT 0,2;<br>        SELECT *FROM newstu LIMIT 2,2;<br>        SELECT *FROM newstu LIMIT 4,2;<br>        SELECT *FROM newstu LIMIT 6,2;<br>#公式  开始的索引 = （当前的页码-1）</em>每页的条数<br>#分页操作是一个方言 和 其他的数据库的实现是不一样的</p>
+<p>//<strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong>基础查询操作<strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong><br>#格式<br>        SELECT<br>            字段1，<br>            字段2<br>        FROM<br>            表名<br>        [WHERE<br>            条件1] ，<br>        [WHERE<br>            条件2]<br>        [GROUP BY<br>            条件3]<br>        [ORDER BY<br>            排序方式<br>       HAVING<br>        LIMIT<br>            开始的索引，每页查询的条数]</p>
+<p>//去除重复的结果集  distinct 结果完全一样才可以去除<br>        SELECT DISTINCT 字段1 FROM 表名;<br>        SELECT DISTINCT NAME FROM newstu;</p>
 <p>#计算列的值的计算   null+数字 = null; null计算的结果都是null<br>        SELECT NAME,score,newid,score+newid FROM newstu; </p>
 <p>#值为null问题的解决<br>        SELECT NAME,score,newid,IFNULL(score,0)+IFNULL(newid,0) FROM newstu; </p>
 <p>#计算值起别名 as 可以省略<br>        SELECT NAME,score,newid,IFNULL(score,0)+IFNULL(newid,0) AS 总分 FROM newstu;<br>        SELECT NAME,score,newid,IFNULL(score,0)+IFNULL(newid,0) 总分 FROM newstu; </p>
 <p>#查询整张表<br>SELECT* FROM 表名;</p>
-<p>#<strong><strong><strong><strong><strong><strong>****</strong></strong></strong></strong></strong></strong>条件查询<strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
+<p>// <strong><strong><strong><strong><strong><strong>****</strong></strong></strong></strong></strong></strong>条件查询<strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
 <h1 id="where条件查询"><a href="#where条件查询" class="headerlink" title="where条件查询"></a>where条件查询</h1><pre><code>/*
     运算符
     &gt; &gt;= &lt; &lt;=  =   &lt;&gt;相当于!=
@@ -308,8 +308,7 @@ SELECT COUNT(IFNULL(newid,0)),AVG(score) FROM newstu GROUP BY NAME;</code></pre>
     AND &amp;&amp;
     OR ||
     NOT !
-*/</code></pre><p>#LIKE的使用</p>
-<pre><code>    /* 占位符
+*/</code></pre><h1 id="LIKE的使用"><a href="#LIKE的使用" class="headerlink" title="LIKE的使用"></a>LIKE的使用</h1><pre><code>    /* 占位符
 _：单个任意字符
 %：任意多个字符
 */
