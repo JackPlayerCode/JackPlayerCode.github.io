@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Mr.xie</title>
+  <title>数据库的操作 | Mr.xie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Mr.xie">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="#####***DDL数据库的怎删改查***#数据库的创建        CREATE DATABASE 数据库名;        CREATE DATABASE IF NOT EXISTS 数据库名;        CREATE DATABASE 数据库名 CHARACTER SET 字符集类型; #数据库的查询        SHOW DATABASES;        SHOW CREATE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库的操作">
+<meta property="og:url" content="http://yoursite.com/2020/03/08/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="Mr.xie">
+<meta property="og:description" content="#####***DDL数据库的怎删改查***#数据库的创建        CREATE DATABASE 数据库名;        CREATE DATABASE IF NOT EXISTS 数据库名;        CREATE DATABASE 数据库名 CHARACTER SET 字符集类型; #数据库的查询        SHOW DATABASES;        SHOW CREATE">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-08T08:24:37.304Z">
+<meta property="article:modified_time" content="2020-03-10T15:55:22.653Z">
 <meta property="article:author" content="Mr.xie">
 <meta name="twitter:card" content="summary">
   
@@ -150,76 +154,229 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-数据库的操作" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/27/hello-world/" class="archive-article-date">
-  	<time datetime="2020-04-26T17:53:01.706Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-27</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/27/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      数据库的操作
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/08/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%93%8D%E4%BD%9C/" class="archive-article-date">
+        
+        <a href="/2020/03/08/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%93%8D%E4%BD%9C/" class="archive-article-date">
   	<time datetime="2020-03-08T08:24:37.304Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/08/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%93%8D%E4%BD%9C/">数据库的操作</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#####<strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong>DDL数据库的怎删改查<strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong><br>#数据库的创建<br>        CREATE DATABASE 数据库名;<br>        CREATE DATABASE IF NOT EXISTS 数据库名;<br>        CREATE DATABASE 数据库名 CHARACTER SET 字符集类型;</p>
+<p>#数据库的查询<br>        SHOW DATABASES;<br>        SHOW CREATE DATABASE 数据库名;</p>
+<p>#数据库的修改<br>        ALTER DATABASE 数据库名 CHARACTER SET 字符集类型</p>
+<p>#数据库的删除<br>        DROP DATABASE 数据库名;<br>        DROP DATABASE IF EXISTS 数据库名;</p>
+<p>#操作数据库<br>        USE 数据库名；<br>        SELECT DATABASE();</p>
+<p>#<strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong>DDL表的增删改查<strong><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong></strong><br>#查询数据库中所有的表<br>        SHOW TABLES;</p>
+<p>#查询表的字符集<br>        SHOW CREATE TABLE 表名;</p>
+<p>#查询表中的结构<br>        DESC newstu;</p>
+<p>#创建一个表<br>        CREATE TABLE NEWSTU(<br>        列名1 类型1，<br>        列名2 类型2，<br>        列名n 类型n);</p>
+<p>#删除一个表<br>        DROP TABLE 表名;<br>        DROP TABLE IF EXISTS n表名;</p>
+<p>#修改一张表<br>        ALTER TABLE oldtable RENAME TO newtable;<br>        ALTER TABLE 表名 CHARACTER SET 字符集;<br>        ALTER TABLE 表名 ADD 列名 类型;<br>        ALTER TABLE 表名 DROP 列名 类型;<br>        ALTER TABLE 表名 CHANGE 列名 新列名 类型;<br>        ALTER TABLE 表名 MODIFY 列名 新类型; </p>
+<p>#<strong><strong><strong><strong>****</strong></strong></strong></strong>DDL数据的增删改操作<strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong><br>#在表中插入数据<br>        INSERT INTO 表名(newid,NAME,age,score,brithday) VALUES(1,”jell”,19,100.0,”2000-09-08”);</p>
+<p>#全员插入不需要写列名<br>        INSERT INTO 表名 VALUES(1,”d”,19,88.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(2,”a”,72,3.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(3,”w”,15,2.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(4,”h”,17,51.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(5,”x”,13,84.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(6,”t”,69,76.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(7,”e”,18,98.0,”2000-09-08”);<br>        INSERT INTO 表名 VALUES(8,”i”,39,100.0,”2000-09-08”);</p>
+<p>#删除某个指定的数据<br>        DELETE FROM 表名 WHERE 键=值;</p>
+<p>#删除表中所有数据<br>        DELETE FROM 表名;</p>
+<p>#查询表中的列<br>        DESC 表名;</p>
+<p>#初始化某一张表<br>        TRUNCATE TABLE 表名;</p>
+<p>#修改表中的数据<br>        UPDATE 表名 SET newid=NULL,age=00 WHERE newid=1;</p>
+<p>#<strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong>排序查询<strong><strong><strong><strong><strong><strong><strong>****</strong></strong></strong></strong></strong></strong></strong><br>#表中数据降序排序desc （并查询）<br>        SELECT*FROM 表名 ORDER BY 键 DESC;<br>    ORDER BY 键 DESC;</p>
+<p>#表中数据升序排序asc      （并查询 ）<br>        SELECT<em>FROM 表名 ORDER BY 键 ASC;<br>    ORDER BY 键 ASC;<br>        SELECT</em>FROM 表名 ORDER BY 键;<br>    ORDER BY 键;</p>
+<p>#<strong><strong><strong><strong>*****</strong></strong></strong></strong>聚合函数<strong><strong><strong><strong><strong><strong>****</strong></strong></strong></strong></strong></strong><br>#count的使用<br>        SELECT COUNT(键) FROM newstu; </p>
+<p>#包括null的count使用<br>        SELECT COUNT(IFNULL(键,0)) FROM 表名;<br>        SELECT COUNT(*) FROM 表名;</p>
+<p>#max的使用<br>        SELECT MAX(键) FROM 表名 ;</p>
+<p>#min的使用<br>        SELECT MIN(键) FROM 表名;</p>
+<p>#sum的使用<br>        SELECT SUM(键) FROM 表名;</p>
+<p>#avg的使用<br>        SELECT AVG(键) FROM 表名;</p>
+<p>#<strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong>分组查询的使用<strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong><br>        SELECT 所查询的内容 FROM newstu GROUP BY 分组的依据（列名）;</p>
+<pre><code>SELECT COUNT(newid),AVG(score) FROM newstu GROUP BY NAME;
+SELECT COUNT(IFNULL(newid,0)),AVG(score) FROM newstu GROUP BY NAME;</code></pre><p>#分组之前对其进行条件限制 where 在分组之前 不能进行聚合函数的判断<br>        SELECT COUNT(newid),AVG(score) FROM newstu WHERE newid &gt; 3  GROUP BY NAME;</p>
+<p>#分组之后对其进行条件限制  having 在分组之后 可以进行聚合函数的判断<br>        SELECT COUNT(newid),AVG(score) FROM newstu GROUP BY NAME HAVING COUNT(newid) &gt;0;</p>
+<p>#<strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong>分页查询的使用<strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong><br>        SELECT <em>FROM newstu LIMIT 开始的索引,每页的条数;<br>        SELECT *FROM newstu LIMIT 0,2;<br>        SELECT *FROM newstu LIMIT 2,2;<br>        SELECT *FROM newstu LIMIT 4,2;<br>        SELECT *FROM newstu LIMIT 6,2;<br>#公式  开始的索引 = （当前的页码-1）</em>每页的条数<br>#分页操作是一个方言 和 其他的数据库的实现是不一样的</p>
+<p>#<strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong>基础查询操作<strong><strong><strong><strong><strong><strong><strong><strong>*****</strong></strong></strong></strong></strong></strong></strong></strong><br>#格式<br>        SELECT<br>            字段1，<br>            字段2<br>        FROM<br>            表名<br>        [WHERE<br>            条件1] ，<br>        [WHERE<br>            条件2]<br>        [GROUP BY<br>            条件3]<br>        [ORDER BY<br>            排序方式<br>       HAVING<br>        LIMIT<br>            开始的索引，每页查询的条数]</p>
+<p>#去除重复的结果集  distinct 结果完全一样才可以去除<br>        SELECT DISTINCT 字段1 FROM 表名;<br>        SELECT DISTINCT NAME FROM newstu;</p>
+<p>#计算列的值的计算   null+数字 = null; null计算的结果都是null<br>        SELECT NAME,score,newid,score+newid FROM newstu; </p>
+<p>#值为null问题的解决<br>        SELECT NAME,score,newid,IFNULL(score,0)+IFNULL(newid,0) FROM newstu; </p>
+<p>#计算值起别名 as 可以省略<br>        SELECT NAME,score,newid,IFNULL(score,0)+IFNULL(newid,0) AS 总分 FROM newstu;<br>        SELECT NAME,score,newid,IFNULL(score,0)+IFNULL(newid,0) 总分 FROM newstu; </p>
+<p>#查询整张表<br>SELECT* FROM 表名;</p>
+<p>#<strong><strong><strong><strong><strong><strong>****</strong></strong></strong></strong></strong></strong>条件查询<strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
+<h1 id="where条件查询"><a href="#where条件查询" class="headerlink" title="where条件查询"></a>where条件查询</h1><pre><code>/*
+    运算符
+    &gt; &gt;= &lt; &lt;=  =   &lt;&gt;相当于!=
+    BETWEEN AND 或 &amp;&amp;   age&gt;=0 AND age&lt;20 BETWEEN 20 AND 30;包含等 
+    IN    IN(数据1，数据2，数据3)  在之类的
+    LIKE    模糊查询    
+    IS NULL    null值不能用等号来比较 is null才可以 
+    IS NOT NULL    null值不能用等号来比较 is NOT null才可以 
+    AND &amp;&amp;
+    OR ||
+    NOT !
+*/</code></pre><p>#LIKE的使用</p>
+<pre><code>    /* 占位符
+_：单个任意字符
+%：任意多个字符
+*/
+    -- 性马的
+    SELECT *FROM newstu WHERE NAME LIKE &quot;马%&quot;;
 
-        <div class="article-info info-on-right">
-          
-          
+    -- 两个字性马的
+    SELECT *FROM newstu WHERE NAME LIKE &quot;马_&quot;;
 
+    -- 一个字的
+    SELECT *FROM newstu WHERE NAME LIKE &quot;_&quot;;</code></pre><p>#查询姓名中包含某个字段<br>        SELECT *FROM newstu WHERE NAME LIKE “%a%”;</p>
+<p>#约束<br>##主键约束<br>###在创建时添加主键约束primary key  非空且唯一 唯一标识 例如id card<br>    CREATE TABLE perpro1(<br>        id INT PRIMARY KEY,<br>        phone_count VARCHAR(20)  – 姓名非空<br>        );#唯一约束对null不做限定<br>###删除主键  不用指定 主键唯一<br>    ALTER TABLE perpro1 DROP PRIMARY KEY;</p>
+<p>###在创建完成后添加主键<br>    ALTER TABLE perpro1 MODIFY id INT PRIMARY KEY;</p>
+<p>###主键自动增长 主键在表内自动增长<br>    CREATE TABLE perpro2(<br>            id INT PRIMARY KEY AUTO_INCREMENT,<br>            phone_count VARCHAR(20)  – 姓名非空<br>            );#唯一约束对null不做限定<br>    INSERT INTO perpro2 VALUE(NULL,”11”); #null即自动增长<br>    INSERT INTO perpro2 VALUE(7,”11”);<br>    INSERT INTO perpro2 VALUE(5,”11”);<br>    SELECT *FROM perpro2;</p>
+<p>###删除自动增长<br>    ALTER TABLE perpro2 MODIFY id INT ;<br>###添加自动增长<br>    ALTER TABLE perpro2 MODIFY id INT AUTO_INCREMENT ;</p>
+<p>##非空约束<br>###创建时候非空约束not null<br>    CREATE TABLE student(<br>    age INT,<br>    NAME VARCHAR(20) NOT NULL – 姓名非空<br>    );<br>###删除非空约束<br>    ALTER TABLE student MODIFY NAME VARCHAR(20);<br>###创建后添加非空约束<br>    ALTER TABLE student MODIFY NAME VARCHAR(10) NO NULL;</p>
+<p>##唯一约束<br>###创建表时添加唯一约束unique<br>    CREATE TABLE perpro(<br>        id INT,<br>        phone_count VARCHAR(20) UNIQUE – 姓名非空<br>        );#唯一约束对null不做限定</p>
+<p>###删除唯一约束 每个唯一约束其实就是一个索引<br>    ALTER TABLE perpro DROP INDEX phone_count;</p>
+<p>###添加唯一约束，要保证原来没有重复的内容<br>    ALTER TABLE perpro MODIFY phone_count VARCHAR(20) UNIQUE;</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/08/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%93%8D%E4%BD%9C/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/04/27/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -242,8 +399,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
